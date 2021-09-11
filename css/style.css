@@ -1,294 +1,310 @@
 /*IDs Y CLASES PARA INDEX*/
-.titulos{
-    font-family:  "oswald", sans-serif;
-    text-align: center;
-    font-weight: bold;
-    font-size: 60px;
-    color: white;
-    background-color: black;
-    max-width: 800px;
-    margin: auto;
-    border-radius: 35px 35px 35px 35px;
-    }
-    .mainArticle{
-        padding: 20px;
-        margin: 50px 50px 50px 50px;
-        text-align: center;
-    }
-    /*CLASES PARA TODAS LAS PAGINAS INICIO*/
-    .menuPrincipal{
-    list-style: none;
-    width: 100px;
-    margin: auto;
-    border-radius: 100px;
-    }
-        .menuPrincipal li a{
-            text-decoration: none;
-            background-image:linear-gradient(to bottom,rgba(4, 4, 170, 0.534),purple,black);
-            color: white;
-            padding: 50px 50px 50px 50px;
-            display: inline-block;
-            font-family:  'Oswald', sans-serif;
-            font-weight: bold;
-            font-size: 20px;
-            border-radius: 100px 62px;
-            margin: auto;
-            height: auto;
-        }
-            .menuPrincipal ul{
-                display: flex;
-                justify-content: right;
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-                .menuPrincipal li a:hover{
-                    text-decoration: underline;
-                    color: white;
-                    transition: 3s;
-                }
-    .iniciodepagina{
-        color: white;
-        align-content: center;
-        text-decoration: underline;
-        font-family: 'Oswald', sans-serif;
-    }
-    .subTitulos{
-        text-decoration: underline;
-        color: rgb(31, 173, 31);
-        font-family: 'Oswald', sans-serif;
-        font-style: italic;
-        font-weight: bold;
-        font-size: 30px;
-        margin: auto;
-        max-width: 325px;
-        background-image:linear-gradient(to bottom,rgba(4, 4, 170, 0.534),purple,black);
-        border-radius: 50px 45px 50px 45px;
-        text-align: center;
-    }
-    .animacionSub{
-    animation-name: animacionSub;
-    animation-duration: 5s;
-    animation-delay: 7s;
-    animation-iteration-count: infinite;
-    }
-    @keyframes animacionSub{
-        0%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 1;
-        }
-    }
-    .CONTACTO{
-        color: rgb(31, 173, 31);
-    }
-    /*CLASES PARA TODAS LAS PAGINAS FINAL*/
-    .horarios{
-        color: rgb(31, 173, 31);
-    }
-    /*ESTILOS DE TEXTO*/
-    .regular{
-        font-style: normal;
-    }
-    .cursiva{
-        font-style: italic;
-    }
-    .negrita{
-        font-weight: bold;
-    }
-    .textoGrande{
-        font-size: 38px;
-    }
-    .timesNewRoman{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    .textoRelativo{
-        font-size: 200%;
-    }
-    .impact{
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    .oswald{
-        font-family: 'Oswald', sans-serif;
-        color: white;
-        font-size: 25px;
-    
-    }
-    .footer{
-        font-family: 'Oswald', sans-serif;
-        color: white;
-        font-size: 25px;
-        text-align: center;
-    }
-    .nosotrosTexto{
-      text-align: center;
-    }
-    /*FIN DE ESTILOS DE TEXTO*/
-    
-    .fondoVyrenk{
-        background-image: url(/imagenes/IMAGENBLUR.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    .bordes{
-        border: solid 2px transparent;
-    }
-    .column{
-        float: left;
-        width: 33.33%;
-        padding: 10px;
-    }
-    .column2{
-        float: left;
-        width: 66.66%;
-        padding: 10px;
-        text-align: right;
-        border-left: 500px;
-        border-color: white;
-    
-    }
-    .column3{
-        float: left;
-        width: 66.66%;
-        padding: 10px;
-        text-align: left;
-        justify-content: center;
-        border-left: 500px;
-        border-color: white;
-    }
-    .column4{
-        float: right;
-        width: 50.00%;
-        padding: 10px;
-    }
-    .row{
-        content: none;
-        display: table;
-        clear: both;
-    }
-    .flexContainer{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items:baseline;
-        align-content: center;
-    }
-    .flexNosotros{
-        display: flex;
-        flex-direction: row;
-        margin: auto;
-        flex-wrap: nowrap;
-    }
-    .flexServicios{
-        display: flex;
-        flex-direction: row;
-        margin: auto;
-        flex-wrap: nowrap;  
-    }
-    .flexFaq{
-            display: flex;
-            flex-direction: row;
-            margin: auto;
-            flex-wrap: nowrap;  
-            align-items: right;
-    }
-    /*GRIDING INICIO*/
-    .gridGeneral{
-        display: grid;
-        grid-column: auto;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "header header"
-        "main main"
-        "footer footer";
-    }
-        .gridGeneral__header{
-            grid-area: header;
-        }
-            .gridGeneral__main{
-                grid-area: main;
-            }
-                .gridGeneral__footer{
-                    grid-area: footer;
-                }
-    /*GRIDING FINAL*/
-    .verticalLine{
-        width: 0px;
-        background-color: white;
-        height: 100%;
-        display: inline-block;
-    }
-    .clearFix::after{
-        clear: both;
-        display: table;
-    }
-    /*Responsive*/
-    /*SmartPhone*/
-    @media(max-width:480px){
-        div{
-            width: 300px;
-        }
-    }
-    /*TRANSICIONES*/
-    .transicionesindex{
-        height: 100px;
-        transition: height 2s;
-        background-color: black;
-        border-radius: 100px 62px;
-        padding: 50px 50px 50px 50px;
-    }
-    .transicionesindex:hover{
-        height: 200px;
-    }
-    
-    .animate__animated.animate__backInDown{
-        --animate-duration: 2s;
-    }
-    .animate__animated.animate__backInLeft{
-        --animate-duration: 2s;
-    }
-    .animate__animated.animate__backInDown.sus{
-        --animate-duration: 6s;
-    }
-    :root{
-        --animate-dalay: 0.5s;
-    }
-    .animate__animated.animate__fadeInDown{
-        --animation-duration: 2s;
-    }
-    .transformPrueba{
-        transform: translate(30px,30px);
-    }
-    .transformNosotros{
-        transform: translate(50px, 50px);
-    }
-    .hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; 
-    }
-    .imagestyle{
-        max-width: 600px;
-        max-height: 400px;
-        width: 600px;
-        height: 400px;
-        padding: 30px;
-        box-sizing: border-box;
-    }
-    .estiloDeBoton1{
-    padding: 40px 20px 20px 20px ;
-    margin-top: 10px;
-    }
-    .estiloDeBoton2{
-        padding: 20px 20px 20px 20px ;
-        margin-top: 60px;
-        }
-    .column2{
-        float: left;
-        width: 33.33%;
-        padding: 10px;
-        display: flex;
-        }
-    
+.titulos {
+  font-family: "oswald", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: white;
+  background-color: black;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 35px 35px 35px 35px; }
+
+.mainArticle {
+  padding: 20px;
+  margin: 50px 50px 50px 50px;
+  text-align: center; }
+
+/*CLASES PARA TODAS LAS PAGINAS INICIO*/
+.menuPrincipal {
+  list-style: none;
+  width: 100px;
+  margin: auto;
+  border-radius: 100px; }
+
+.menuPrincipal li a {
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, rgba(4, 4, 170, 0.534), purple, black);
+  color: white;
+  padding: 50px 50px 50px 50px;
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 100px 62px;
+  margin: auto;
+  height: auto; }
+
+.menuPrincipal ul {
+  display: flex;
+  justify-content: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.menuPrincipal li a:hover {
+  text-decoration: underline;
+  color: white;
+  transition: 3s; }
+
+.iniciodepagina {
+  color: white;
+  align-content: center;
+  text-decoration: underline;
+  font-family: 'Oswald', sans-serif; }
+
+.subTitulos {
+  text-decoration: underline;
+  color: #1fad1f;
+  font-family: 'Oswald', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30px;
+  margin: auto;
+  max-width: 325px;
+  background-image: linear-gradient(to bottom, rgba(4, 4, 170, 0.534), purple, black);
+  border-radius: 50px 45px 50px 45px;
+  text-align: center; }
+
+.animacionSub {
+  animation-name: animacionSub;
+  animation-duration: 5s;
+  animation-delay: 7s;
+  animation-iteration-count: infinite; }
+
+@keyframes animacionSub {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.CONTACTO {
+  color: #1fad1f; }
+
+/*CLASES PARA TODAS LAS PAGINAS FINAL*/
+.horarios {
+  color: #1fad1f; }
+
+/*ESTILOS DE TEXTO*/
+.regular {
+  font-style: normal; }
+
+.cursiva {
+  font-style: italic; }
+
+.negrita {
+  font-weight: bold; }
+
+.textoGrande {
+  font-size: 38px; }
+
+.timesNewRoman {
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+.textoRelativo {
+  font-size: 200%; }
+
+.impact {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+
+.oswald {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 25px; }
+
+.footer {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 25px;
+  text-align: center; }
+
+.nosotrosTexto {
+  text-align: center; }
+
+/*FIN DE ESTILOS DE TEXTO*/
+.fondoVyrenk {
+  background-image: url(/imagenes/IMAGENBLUR.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.bordes {
+  border: solid 2px transparent; }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px; }
+
+.column2 {
+  float: left;
+  width: 66.66%;
+  padding: 10px;
+  text-align: right;
+  border-left: 500px;
+  border-color: white; }
+
+.column3 {
+  float: left;
+  width: 66.66%;
+  padding: 10px;
+  text-align: left;
+  justify-content: center;
+  border-left: 500px;
+  border-color: white; }
+
+.column4 {
+  float: right;
+  width: 50.00%;
+  padding: 10px; }
+
+.row {
+  content: none;
+  display: table;
+  clear: both; }
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: center; }
+
+.flexNosotros {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  flex-wrap: nowrap; }
+
+.flexServicios {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  flex-wrap: nowrap; }
+
+.flexFaq {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  flex-wrap: nowrap;
+  align-items: right; }
+
+/*GRIDING INICIO*/
+.gridGeneral {
+  display: grid;
+  grid-column: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "header header" "main main" "footer footer"; }
+
+.gridGeneral__header {
+  grid-area: header; }
+
+.gridGeneral__main {
+  grid-area: main; }
+
+.gridGeneral__footer {
+  grid-area: footer; }
+
+/*GRIDING FINAL*/
+.verticalLine {
+  width: 0px;
+  background-color: white;
+  height: 100%;
+  display: inline-block; }
+
+.clearFix::after {
+  clear: both;
+  display: table; }
+
+/*Responsive*/
+/*SmartPhone*/
+@media (max-width: 480px) {
+  div {
+    width: 300px; } }
+
+/*TRANSICIONES*/
+.transicionesindex {
+  height: 100px;
+  transition: height 2s;
+  background-color: black;
+  border-radius: 100px 62px;
+  padding: 50px 50px 50px 50px; }
+
+.transicionesindex:hover {
+  height: 200px; }
+
+.animate__animated.animate__backInDown {
+  --animate-duration: 2s; }
+
+.animate__animated.animate__backInLeft {
+  --animate-duration: 2s; }
+
+.animate__animated.animate__backInDown.sus {
+  --animate-duration: 6s; }
+
+:root {
+  --animate-dalay: 0.5s; }
+
+.animate__animated.animate__fadeInDown {
+  --animation-duration: 2s; }
+
+.transformPrueba {
+  transform: translate(30px, 30px); }
+
+.transformNosotros {
+  transform: translate(50px, 50px); }
+
+.hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+.imagestyle {
+  max-width: 600px;
+  max-height: 400px;
+  width: 600px;
+  height: 400px;
+  padding: 30px;
+  box-sizing: border-box; }
+
+.estiloDeBoton1 {
+  padding: 40px 20px 20px 20px;
+  margin-top: 10px; }
+
+.estiloDeBoton2 {
+  padding: 20px 20px 20px 20px;
+  margin-top: 60px; }
+
+.column2 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  display: flex; }
+
+/*******************************************
+    APLICACION DE SCSS
+    *******************************************/
+/*IMPORTS SCSS*/
+/*VARIABLES SCSS*/
+/**********************************
+    ANIDACION - NESTING
+    ***********************************/
+.ul {
+  list-style: none; }
+  .ul .li {
+    padding: 15px;
+    display: flex; }
+    .ul .li .a {
+      text-decoration: none;
+      font-size: 16px;
+      color: rgba(4, 4, 170, 0.534); }
+    .ul .li a:hover {
+      text-decoration: underline;
+      font-size: 14px;
+      color: rgba(4, 4, 170, 0.534); }

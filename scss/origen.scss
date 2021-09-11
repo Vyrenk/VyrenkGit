@@ -137,20 +137,6 @@
     .bordes{
         border: solid 2px transparent;
     }
-    .column{
-        float: left;
-        width: 33.33%;
-        padding: 10px;
-    }
-    .column2{
-        float: left;
-        width: 66.66%;
-        padding: 10px;
-        text-align: right;
-        border-left: 500px;
-        border-color: white;
-    
-    }
     .column3{
         float: left;
         width: 66.66%;
@@ -305,7 +291,13 @@
     $gradiente1menu:rgba(4, 4, 170, 0.534);
     $gradiente2menu:purple;
     $black: black;
-   
+    $ancho:720px;
+    $fondo: green;
+    $texto: yellow; 
+    $mobile:578px;
+    $tablet:992px;
+    $desktop:1200px;
+    $subtitulos: #1fad1f;
     /**********************************
     ANIDACION - NESTING
     ***********************************/
@@ -326,3 +318,85 @@
             }
         }
     }
+    /*EJEMPLOS DE OPERADORES*/
+    .caja_uno{
+        background-color: $fondo;
+        width: $ancho
+    }
+    .caja_dos{
+        width: $ancho/2;
+    }
+    .caja_tres{
+        width: $ancho*2;
+    }
+    .caja_cuatro{
+        width: ($ancho/2)-60;
+    }
+    /*EJEMPLOS DE CONDICIONALES*/
+    .pejemplo{
+        @if 1+1 == 2 {
+        border: 2px solid black    
+        }
+    }
+    /*2ndo condicional*/
+    .pejemplo{
+        @if $ancho < $mobile {
+        color: blue;
+        }
+        @else if $ancho > $tablet{
+            color: red;
+        }
+        @else if $ancho > $desktop{
+            color: green;
+        }
+        @else   {
+            color: black;
+        }
+    }
+    /*Bucles*/
+    @for $i from 1   to 6 {
+        h#{$i} {
+            font: 2.5em / $i;
+        }
+    }
+    .subTitulos {
+        text-decoration: underline;
+        color: $subtitulos;
+        font-family: 'Oswald', sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 30px;
+        margin: auto;
+        max-width: 325px;
+        background-image: linear-gradient(to bottom, rgba(4, 4, 170, 0.534), purple, black);
+        border-radius: 50px 45px 50px 45px;
+        text-align: center; 
+    }
+    @mixin articulos {
+        padding: 20px;
+        margin: 50px 50px 50px 50px;
+    }
+    .mainArticle {
+        text-align: center; 
+        @include articulos();
+    }
+    .article2{
+        text-align: left;
+        @include articulos()
+    };
+            @mixin columnas {
+                padding: 10px;
+            };
+                .column{
+                @include columnas();
+                float: left;
+                width: 33.33%;   
+                };
+                        .column2{
+                            @include columnas();
+                            float: left;
+                            width: 66.66%;
+                            text-align: left;
+                            border-left: 500px;
+                            border-color: white;
+        };

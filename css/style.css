@@ -133,19 +133,6 @@
 .bordes {
   border: solid 2px transparent; }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px; }
-
-.column2 {
-  float: left;
-  width: 66.66%;
-  padding: 10px;
-  text-align: right;
-  border-left: 500px;
-  border-color: white; }
-
 .column3 {
   float: left;
   width: 66.66%;
@@ -308,3 +295,77 @@
       text-decoration: underline;
       font-size: 14px;
       color: rgba(4, 4, 170, 0.534); }
+
+/*EJEMPLOS DE OPERADORES*/
+.caja_uno {
+  background-color: green;
+  width: 720px; }
+
+.caja_dos {
+  width: 360px; }
+
+.caja_tres {
+  width: 1440px; }
+
+.caja_cuatro {
+  width: 300px; }
+
+/*EJEMPLOS DE CONDICIONALES*/
+.pejemplo {
+  border: 2px solid black; }
+
+/*2ndo condicional*/
+.pejemplo {
+  color: black; }
+
+/*Bucles*/
+h1 {
+  font: 2.5em; }
+
+h2 {
+  font: 1.25em; }
+
+h3 {
+  font: 0.83333em; }
+
+h4 {
+  font: 0.625em; }
+
+h5 {
+  font: 0.5em; }
+
+.subTitulos {
+  text-decoration: underline;
+  color: #1fad1f;
+  font-family: 'Oswald', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30px;
+  margin: auto;
+  max-width: 325px;
+  background-image: linear-gradient(to bottom, rgba(4, 4, 170, 0.534), purple, black);
+  border-radius: 50px 45px 50px 45px;
+  text-align: center; }
+
+.mainArticle {
+  text-align: center;
+  padding: 20px;
+  margin: 50px 50px 50px 50px; }
+
+.article2 {
+  text-align: left;
+  padding: 20px;
+  margin: 50px 50px 50px 50px; }
+
+.column {
+  padding: 10px;
+  float: left;
+  width: 33.33%; }
+
+.column2 {
+  padding: 10px;
+  float: left;
+  width: 66.66%;
+  text-align: left;
+  border-left: 500px;
+  border-color: white; }
